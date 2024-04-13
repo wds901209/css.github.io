@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Element</title>
+    <style>
+        h1::first-letter{
+            color: blue;
+        }
+        p::first-line{
+            color: red;
+        }
+        p::selection{
+            background-color: gray;
+            color: #fff;
+        }
+        #fruit li:before{
+            /* 也可以在""中加表情 */
+            content:"[我是加在前面的]";
+        }
+        #apple::after{
+            content: "aaaa";
+        }
+        #orange::after{
+            content: "oooo";
+        }
+        #banana::after{
+            content: "bbbb";
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS 偽元素</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque voluptate deserunt similique veniam, nostrum praesentium excepturi. Beatae accusantium, possimus doloremque magnam ipsam voluptates odit eius, temporibus nemo, libero maiores quibusdam.</p>
+    <ul id="fruit">
+        <li id="apple">蘋果</li>
+        <li id="orange">橘子</li>
+        <li id="banana">香蕉</li>
+    </ul>
+</body>
+</html>

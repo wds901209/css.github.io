@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS中的margin</title>
+    <style>
+        div{
+            width: 300px;
+            height: 150px;
+            border: 1px solid #000;
+        }
+        #p1{
+            margin-top: 10px;
+            margin-bottom: 100px;
+        }
+        #box_1{
+            /* 讓整個往右移 */
+            margin-left: 50px;
+        }
+        #box_2{
+            /* 預設式上右下左 */
+            margin:30px 30px 30px 30px;
+            /* 讓盒子置中 */
+            margin:auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>我是標題元素</h1>
+    <div id="box_1">
+        <p id="p1">段落一 <br>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates esse sunt voluptate temporibus cumque eveniet sit aliquid assumenda illum repellendus corporis obcaecati, nesciunt inventore corrupti molestias ipsum unde est aspernatur?</p>
+    </div>
+
+    <div id="box_2">
+        <p id="p2">段落二 <br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus ipsum magnam vel vitae deleniti. Hic sunt dolore cum nisi! Nostrum corporis delectus cupiditate nobis deleniti excepturi sunt dicta quia voluptatibus.</p>
+    </div>
+</body>
+</html>

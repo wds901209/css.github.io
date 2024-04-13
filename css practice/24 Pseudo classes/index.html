@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pseudo classes</title>
+    <style>
+        /* 標記沒有點擊過的link */
+        a:link {
+            color: orange;
+        }
+        /* 標記有點擊過的link */
+        a:visited {
+            color: gray;
+        }
+        /* 滑鼠停在link時的顏色 */
+        a:hover {
+            color: #1810c1;
+        }
+        /* 滑鼠點擊link當下的顏色 */
+        a:active {
+            color: red;
+        }
+        /* 滑鼠懸停在li上時的顏色 */
+        li:hover{
+            background-color: gray;
+        }
+        /* 滑鼠沒有懸停在li上時的顏色 */
+        li:not(:hover){
+            color: rgb(29, 76, 203);
+        }
+    </style>
+</head>
+<body>
+    <a href="http://www.google.com">google</a>
+    <a href="http://www.example.com">example</a>
+    <a href="http://www.openai.com">OpenAI</a>
+    <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+        <li>6</li>
+        <li>7</li>
+        <li>8</li>
+        <li>9</li>
+        <li>10</li>
+    </ul>
+</body>
+</html>

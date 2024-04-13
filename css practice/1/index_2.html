@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>基本css語法</title>
+    <!-- 第一種css方法，直接寫在head裡面 -->
+    <style>
+        /* 對元素(像是"header、p、h1等等",會發現下面header內的字都是紅色)本身直接修飾 */
+        header{
+            color: red;
+        }
+        p{
+            color: blue;
+        }
+        /* 利用id的方式來選擇 */
+        #my-header p{
+            color: brown;
+        }
+    </style>
+</head>
+
+<body>
+    <header id="my-header">
+        <h1>CSS 語法入門</h1>
+        <p>這是第一個段落</p>
+        <p>另一個段落</p>
+    </header>
+</body>
+</html>

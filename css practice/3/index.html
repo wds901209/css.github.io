@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS的顏色</title>
+    <style>
+        body{
+            color: bisque;
+        }
+        /* 拿p1時候因為是id所以前面要加"#" */
+        #p1{
+            color: tomato;
+        }
+        /* 用rgb來使用顏色 */
+        #p2{
+            color:rgb(55, 25, 110)
+        }
+        /* 16進制 */
+        #p3{
+            /* #1234也可以 */
+            color: #FFFF;
+            background-color: #000000;
+        }
+        /* HSL (H-色調; S-飽和度; L-亮度)*/
+        #p4{
+            color: hsl(125, 76%, 40%);
+        }
+    </style>
+</head>
+<body>
+    <p id="p1">第一段</p>
+    <p id="p2">第二段</p>
+    <p id="p3">第三段</p>
+    <p id="p4">第四段</p>
+</body>
+</html>
